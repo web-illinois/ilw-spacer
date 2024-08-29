@@ -6,7 +6,7 @@ Links: **[ilw-spacer in Builder](https://builder3.toolkit.illinois.edu/component
 
 ## Overview
 
-This is a spacer component to increase margin between two other components. This has one attribute that controls how tall this is in standard CSS height syntax. Defaults to 20px.
+This is a spacer component to increase vertical margin between two other components. This has one attribute that controls how tall this is in standard CSS height syntax. Defaults to 20px.
 
 ### Attributes
 * `height`: height of spacer.

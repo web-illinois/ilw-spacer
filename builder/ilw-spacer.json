@@ -1,9 +1,9 @@
 {
-    "title": "<%= _.startCase(name.slice(4)) %>",
-    "tag": "<%= name %>",
-    "github": "https://github.com/web-illinois/<%= name %>/",
+    "title": "Spacer",
+    "tag": "ilw-spacer",
+    "github": "https://github.com/web-illinois/ilw-spacer/",
     "type": "web component",
-    "element-name": "<%= name %>",
+    "element-name": "ilw-spacer",
     "description": "Description for builder.",
     "toolkit-version": "",
     "production-version": "",

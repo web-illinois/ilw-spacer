@@ -10,8 +10,20 @@
     <script type="module" src="/src/ilw-spacer.js"></script>
 </head>
 
-<body style="margin: 0; padding: 0;">
-<ilw-spacer></ilw-spacer>
-</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      const params = new URLSearchParams(window.location.search);
+      document.querySelectorAll("ilw-spacer").forEach(component => {
+        if (params.has('height')) {
+          component.setAttribute('height', params.get('height'));
+        }
+      });
+    });
+</script>
 
+<body style="margin: 0; padding: 0;">
+    <p style="margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien lorem, sodales sit amet pharetra a, rutrum non nisi. Quisque in mattis enim. Phasellus ut pellentesque nibh, id semper massa. </p>
+    <ilw-spacer></ilw-spacer>
+    <p style="margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien lorem, sodales sit amet pharetra a, rutrum non nisi. Quisque in mattis enim. Phasellus ut pellentesque nibh, id semper massa. </p>
+</body>
 </html>

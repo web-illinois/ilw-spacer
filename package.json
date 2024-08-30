@@ -1,6 +1,6 @@
 {
     "name": "@illinois-toolkit/ilw-spacer",
-    "description": "One paragraph description of the component.",
+    "description": "Illinois Toolkit: increase vertical margin between two other components",
     "repository": "github:web-illinois/ilw-spacer",
     "private": false,
     "license": "MIT",

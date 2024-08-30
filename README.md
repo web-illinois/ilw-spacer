@@ -23,6 +23,10 @@ This generates a single `div` with no margins, padding-bottom of the height attr
 
 This uses the `role="presentation"` attribute to ensure that screen readers and other assistive technology ignores it. This should not be in the accessibility tree.
 
+## Upgrade Instructions
+
+This is a new component. 
+
 ## External References
 
 * https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Values_and_units

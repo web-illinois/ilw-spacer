@@ -1,29 +1,21 @@
 import { LitElement, html } from 'lit';
-import styles from './ilw-spacer.styles';
-import './ilw-spacer.css';
 
 class Spacer extends LitElement {
 
     static get properties() {
         return {
-            theme: { type: String, attribute: true }
+            height: { type: String, attribute: true }
         };
-    }
-
-    static get styles() {
-        return styles;
     }
 
     constructor() {
         super();
-        this.theme = '';
+        this.height = '20px';
     }
 
     render() {
         return html`
-      <div>
-          <slot></slot>
-      </div>
+      <div role="presentation" style="padding: 0 0 ${this.height} 0; margin: 0; background-color: transparent; visibility: hidden;"></div>
     `;
     }
 }

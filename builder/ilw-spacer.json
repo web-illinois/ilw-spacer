@@ -6,7 +6,7 @@
     "element-name": "ilw-spacer",
     "description": "This is a spacer component to increase vertical margin between two other components. ",
     "purpose": "Add vertical spacing between components.",
-    "toolkit-version": "",
-    "production-version": "",
+    "toolkit-version": "1.0",
+    "production-version": "1.0",
     "development-version": "1.0-beta"
 }

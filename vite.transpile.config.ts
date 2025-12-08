@@ -7,9 +7,9 @@ export default defineConfig({
     build: {
         outDir: "../dist",
         lib: {
-            name: "ilw-filter",
-            entry: "ilw-filter.ts",
-            fileName: "ilw-filter",
+            name: "ilw-spacer",
+            entry: "ilw-spacer.ts",
+            fileName: "ilw-spacer",
             formats: ["es"],
         },
         rollupOptions: {

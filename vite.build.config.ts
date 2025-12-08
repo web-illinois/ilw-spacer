@@ -6,15 +6,15 @@ export default defineConfig({
     build: {
         outDir: "../dist/cdn",
         lib: {
-            name: "ilw-filter",
-            entry: "ilw-filter.ts",
-            fileName: "ilw-filter",
+            name: "ilw-spacer",
+            entry: "ilw-spacer.ts",
+            fileName: "ilw-spacer",
             formats: ["es"],
         },
         rollupOptions: {
             output: {
                 assetFileNames: (chunkInfo) => {
-                    if (chunkInfo.name === "style.css") return "ilw-filter.css";
+                    if (chunkInfo.name === "style.css") return "ilw-spacer.css";
                     return "[name][extname]";
                 },
             },

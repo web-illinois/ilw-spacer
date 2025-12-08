@@ -6,20 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Spacer Component</title>
     <link rel="stylesheet" href="https://cdn.brand.illinois.edu/illinois.css">
-    <link rel="stylesheet" href="https://dev.toolkit.illinois.edu/ilw-global/3.0.0-alpha/ilw-global.css">
+    <link rel="stylesheet" href="https://cdn.toolkit.illinois.edu/ilw-global/3/ilw-global.css">
     <script type="module" src="/src/ilw-spacer.js"></script>
 </head>
 
-<script>
-    document.addEventListener("DOMContentLoaded", function(event) {
-      const params = new URLSearchParams(window.location.search);
-      document.querySelectorAll("ilw-spacer").forEach(component => {
-        if (params.has('height')) {
-          component.setAttribute('height', params.get('height'));
-        }
+  <script>
+      document.addEventListener("DOMContentLoaded", function(event) {
+        const params = new URLSearchParams(window.location.search);
+        document.querySelectorAll("ilw-spacer").forEach(component => {
+          params.forEach((value, key) => {
+              component.setAttribute(key, value);
+          });
+        });
       });
-    });
-</script>
+  </script>
 
 <body style="margin: 0; padding: 0;">
     <p style="margin: 0; padding: 0;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sapien lorem, sodales sit amet pharetra a, rutrum non nisi. Quisque in mattis enim. Phasellus ut pellentesque nibh, id semper massa. </p>

@@ -1,0 +1,30 @@
+{
+    "title": "Spacer",
+    "tag": "ilw-spacer",
+    "github": "https://github.com/web-illinois/ilw-spacer/",
+    "type": "web component",
+    "element-name": "ilw-spacer",
+    "description": "This is a spacer component to increase vertical margin between two other components. ",
+    "builder-version": "latest",
+    "version": "1.1.2-beta",
+    "date": "09/13/2024",
+    "css": "https://dev.toolkit.illinois.edu/ilw-spacer/latest/ilw-spacer.css",
+    "js": "https://dev.toolkit.illinois.edu/ilw-spacer/latest/ilw-spacer.js",
+    "production": false,
+    "notes": "",
+    "parent-style": "",
+    "attributes-fixed": [],
+    "attributes-text": [
+        {
+            "name": "height",
+            "description": "Height in pixels or another valid CSS unit. Defaults to 20px.",
+            "depreciated": false,
+            "value": ""
+        }
+    ],
+    "attributes": [],
+    "classes-fixed": [],
+    "classes": [],
+    "css-variables": [
+    ]
+}

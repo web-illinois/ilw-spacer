@@ -17,7 +17,7 @@
             "require": "./dist/ilw-spacer.cjs",
             "default": "./dist/ilw-spacer.js"
         },
-        "./ilw-filter.css": {
+        "./ilw-spacer.css": {
             "import": "./dist/ilw-spacer.css"
         }
     },

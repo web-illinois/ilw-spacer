@@ -1,7 +1,7 @@
 import { expect, test } from "vitest";
 import { render } from "vitest-browser-lit";
 import { html } from "lit";
-import "../src/ilw-content";
+import "../src/ilw-spacer";
 
 const content = html`
     <ilw-spacer>

@@ -12,7 +12,6 @@ jobs:
     - name: 'Checkout GitHub Action'
       uses: actions/checkout@v4
   build:
-      needs: setup
       permissions:
         contents: read
         pull-requests: write
@@ -20,8 +19,3 @@ jobs:
       uses: web-illinois/toolkit-management/.github/workflows/component_deploy.yml@main
       with:
         COMPONENT_NAME: ${{github.event.repository.name}}
-        TOOLKIT_AWS_ACCESS_KEY: ${{ vars.TOOLKIT_AWS_ACCESS_KEY }}
-        TOOLKIT_AWS_CLOUDFRONT: ${{ vars.TOOLKIT_AWS_CLOUDFRONT }}
-        TOOLKIT_AWS_CLOUDFRONT_DEV: ${{ vars.TOOLKIT_AWS_CLOUDFRONT_DEV }}
-      secrets:
-        TOOLKIT_AWS_ACCESS_SECRET: ${{ secrets.TOOLKIT_AWS_ACCESS_SECRET }}

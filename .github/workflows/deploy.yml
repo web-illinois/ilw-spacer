@@ -16,3 +16,5 @@ jobs:
       uses: web-illinois/toolkit-management/.github/workflows/component_deploy.yml@main
       with:
         COMPONENT_NAME: ${{github.event.repository.name}}
+      secrets:
+        TOOLKIT_AWS_ACCESS_SECRET: ${{ secrets.TOOLKIT_AWS_ACCESS_SECRET }}

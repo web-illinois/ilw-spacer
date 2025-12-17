@@ -2,9 +2,6 @@ name: deploy
 on:
   release:
     types: [published]
-permissions:
-  id-token: write  # Required for NPM Publish OIDC
-  contents: read
 jobs:
   setup:
     runs-on: ubuntu-latest

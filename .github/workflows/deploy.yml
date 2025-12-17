@@ -17,7 +17,7 @@ jobs:
         contents: read
         pull-requests: write
         id-token: write  # Required for NPM Publish OIDC
-      uses: bryanjonker-illinois/action-test/.github/workflows/reusable.yml@main
+      uses: web-illinois/toolkit-management/.github/workflows/component_deploy.yml@main
       with:
         COMPONENT_NAME: ${{github.event.repository.name}}
         TOOLKIT_AWS_ACCESS_KEY: ${{ vars.TOOLKIT_AWS_ACCESS_KEY }}
